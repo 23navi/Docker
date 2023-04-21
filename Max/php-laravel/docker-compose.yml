@@ -29,3 +29,14 @@ services:
       dockerfile: "composer.Dockerfile"
     volumes:
       - ./src:/var/www/html
+
+
+
+
+
+
+
+
+
+
+# docker-compose run --rm composer-server create-project --prefer-dist laravel/laravel .
