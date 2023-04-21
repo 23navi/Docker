@@ -22,3 +22,10 @@ services:
     env_file:
       - "./env/mysql.env"
 
+
+  composer-server:
+    build: 
+      context: "./dockerfiles"
+      dockerfile: "composer.Dockerfile"
+    volumes:
+      - ./src:/var/www/html
