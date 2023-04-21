@@ -17,3 +17,8 @@ services:
     volumes:
       - ./src:/var/www/html
 
+  mysql-server:
+    image: "mysql:5.7"
+    env_file:
+      - "./env/mysql.env"
+
